@@ -1,0 +1,3 @@
+name,text,date,rating
+Sample Customer A,SAMPLE ENTRY — a CSV-fed sample quote. Replace with a real customer's words before publishing.,2026-10-02,5
+Sample Customer B,SAMPLE ENTRY — the second CSV row; it has no rating and no date,,

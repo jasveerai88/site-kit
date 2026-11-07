@@ -1,0 +1,1 @@
+{"widgets":[{"id":"faq","items":[{"q":"Do you deliver?"}],"type":"faq"},{"id":"chat","type":"chat"},{"id":"pricing","tiers":[{"cta_label":"Start","features":["One loaf each week"],"name":"Basic","period":"/mo","price":49}],"type":"pricing"},{"id":"sale","target":"2027-06-01T09:00:00","type":"countdown"}]}

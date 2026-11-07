@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "site-kit"
+version = "1.0.0"
+description = "Is this static site ready to launch? A pre-launch audit, legal-page generator, widget fragments, a link page and a testimonials wall as one local CLI with a single launch-check receipt."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Jasveer Singh" },
+]
+keywords = [
+    "static-site",
+    "site-audit",
+    "seo",
+    "privacy-policy-generator",
+    "widgets",
+    "link-in-bio",
+    "testimonials",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jasveerai88/site-kit"
+Repository = "https://github.com/jasveerai88/site-kit"
+Issues = "https://github.com/jasveerai88/site-kit/issues"
+Changelog = "https://github.com/jasveerai88/site-kit/blob/main/CHANGELOG.md"
+
+[project.scripts]
+site-kit = "site_kit:main"
+
+# The suite is six standard-library modules in src/: the
+# site_kit dispatcher plus the five ported module
+# engines (site_audit, compliance_pages, widget_kit,
+# link_page_kit, wall_of_love), each installed as a
+# top-level module so the dispatcher can import them by
+# name. `python3 src/site_kit.py` keeps working from a
+# checkout.
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["site_kit", "site_audit", "compliance_pages", "widget_kit", "link_page_kit", "wall_of_love"]
