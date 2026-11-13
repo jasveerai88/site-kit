@@ -90,8 +90,7 @@ pipx install site-kit        # or: pip install site-kit
 site-kit launch-check path/to/site-folder
 ```
 
-*(The PyPI name goes live when v1.0.0 is published;
-until then use a source checkout: `pip install .`, or
+*(Live on PyPI since v1.0.0. Source checkouts also work: `pip install .`, or
 `pipx install git+https://github.com/jasveerai88/site-kit`.)*
 
 Or each module on its own:
